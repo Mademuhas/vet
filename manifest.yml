@@ -1,0 +1,11 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: projetovet
+  buildpack: python_buildpack
+  command: gunicorn djcrm.wsgi
+  disk_quota: 1G
+  memory: 2048MB
+  domain: mybluemix.net
+  host: projetovet
